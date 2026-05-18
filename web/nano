@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ERP - Perfil de Usuario</title>
+</head>
+<body class="bg-slate-200 flex items-center justify-center h-screen font-sans">
+    <div class="bg-white p-8 rounded-xl shadow-2xl w-96 text-center border-t-8 border-blue-900">
+        <img src="/perfiles/img.png" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-slate-100 shadow-md">
+        
+        <h2 class="text-2xl font-bold text-slate-800 uppercase">{{ $user->username }}</h2>
+        <p class="text-slate-500 mb-6 font-mono text-sm">ID DE SISTEMA: {{ $user->id }}</p>
+        
+        <div class="text-left space-y-4 bg-slate-50 p-6 rounded-lg border border-slate-200">
+            <div>
+                <p class="text-xs text-slate-400 uppercase font-bold tracking-wider">Correo Electrónico</p>
+                <p class="text-slate-700 font-medium">{{ $user->email ?? 'Sin correo registrado' }}</p>
+            </div>
+            <div>
+                <p class="text-xs text-slate-400 uppercase font-bold tracking-wider">Estado de Cuenta</p>
+                <p class="text-green-600 font-bold text-lg">${{ number_format($user->balance ?? 0, 2) }}</p>
+            </div>
+        </div>
+
+        <a href="/" class="block mt-8 bg-slate-800 text-white py-2 rounded-lg font-semibold hover:bg-slate-700 transition shadow-md">
+            Volver al ERP
+        </a>
+    </div>
+</body>
+</html>

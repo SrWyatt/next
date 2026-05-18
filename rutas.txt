@@ -1,0 +1,14 @@
+Archivos de Pantalla (Vistas)
+
+  * Inicio: `/var/www/sistema-comercial/resources/views/index.blade.php`
+  * Panel principal: `/var/www/sistema-comercial/resources/views/dashboard.blade.php`
+  * Login: `/var/www/sistema-comercial/resources/views/login.blade.php`
+  * Perfil: `/var/www/sistema-comercial/resources/views/profile.blade.php`
+  * Tablas de datos: `/var/www/sistema-comercial/resources/views/partials/table.blade.php`
+
+Archivos de Lógica
+
+  * Rutas de la web: `/var/www/sistema-comercial/routes/web.php`
+  * Controlador principal: `/var/www/sistema-comercial/app/Http/Controllers/DashboardController.php`
+  * Configuración de base de datos: `/var/www/sistema-comercial/.env`
+  * Configuración de Apache: `/etc/apache2/sites-available/sistema-comercial.conf`
